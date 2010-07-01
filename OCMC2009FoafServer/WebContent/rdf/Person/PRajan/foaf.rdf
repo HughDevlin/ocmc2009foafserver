@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/PRajan"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Prashant Rajan" rdf:about="Person/PRajan">
+      <foaf:mbox rdf:resource="mailto:prajan@purdue.edu"/>
+      <foaf:mbox_sha1sum>2fe26aa79a346b955c3b54e3e795576e6f75e298</foaf:mbox_sha1sum>
+      <foaf:givenName>Prashant</foaf:givenName>
+      <foaf:name>Prashant Rajan</foaf:name>
+      <foaf:familyName>Rajan</foaf:familyName>
+   </foaf:Person>
+</rdf:RDF>

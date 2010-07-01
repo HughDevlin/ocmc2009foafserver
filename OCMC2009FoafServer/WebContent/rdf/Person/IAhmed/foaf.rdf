@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/IAhmed"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Iftekhar Ahmed" rdf:about="Person/IAhmed">
+      <foaf:mbox rdf:resource="mailto:iahmed@ncsa.uiuc.edu"/>
+      <foaf:knows rdf:resource="Person/BKeegan"/>
+      <foaf:knows rdf:resource="Person/ECarlson"/>
+      <foaf:knows rdf:resource="Person/JFulk"/>
+      <foaf:knows rdf:resource="Person/JTreem"/>
+      <foaf:knows rdf:resource="Person/JBarbour"/>
+      <foaf:knows rdf:resource="Person/KKee"/>
+      <foaf:knows rdf:resource="Person/Kcosgriff"/>
+      <foaf:knows rdf:resource="Person/MPoole"/>
+      <foaf:knows rdf:resource="Person/MZhu"/>
+      <foaf:knows rdf:resource="Person/NContractor"/>
+      <foaf:knows rdf:resource="Person/PMonge"/>
+      <foaf:knows rdf:resource="Person/YHuang"/>
+      <foaf:phone rdf:resource="tel:+1-217-244-8397"/>
+      <foaf:familyName>Ahmed</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DecisionMaking</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DistributedWork</foaf:interest>
+      <foaf:givenName>Iftekhar</foaf:givenName>
+      <foaf:name>Iftekhar Ahmed</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Innovation</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InterOrgComm</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KnwldgSharing</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgChange</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structuration</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechImplem</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time</foaf:interest>
+      <foaf:mbox_sha1sum>ebd9a3ecef93e6ebfd06089d33dc7ad4b6e6274f</foaf:mbox_sha1sum>
+   </foaf:Person>
+</rdf:RDF>

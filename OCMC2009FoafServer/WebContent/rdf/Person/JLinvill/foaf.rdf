@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/JLinvill"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Jennifer S. Linvill" rdf:about="Person/JLinvill">
+      <foaf:mbox rdf:resource="mailto:jlinvill@purdue.edu"/>
+      <foaf:knows rdf:resource="Person/AHarris"/>
+      <foaf:knows rdf:resource="Person/BBerkelaar"/>
+      <foaf:knows rdf:resource="Person/BBritt"/>
+      <foaf:knows rdf:resource="Person/CArmstrong"/>
+      <foaf:knows rdf:resource="Person/CArendt"/>
+      <foaf:knows rdf:resource="Person/EWilliams"/>
+      <foaf:knows rdf:resource="Person/GFairhurst"/>
+      <foaf:knows rdf:resource="Person/HSuo"/>
+      <foaf:knows rdf:resource="Person/JFulk"/>
+      <foaf:knows rdf:resource="Person/JTan"/>
+      <foaf:knows rdf:resource="Person/JDowd"/>
+      <foaf:knows rdf:resource="Person/JBarbour"/>
+      <foaf:knows rdf:resource="Person/LOConnor"/>
+      <foaf:knows rdf:resource="Person/LKisselburgh"/>
+      <foaf:knows rdf:resource="Person/MPoole"/>
+      <foaf:knows rdf:resource="Person/MWu"/>
+      <foaf:knows rdf:resource="Person/NContractor"/>
+      <foaf:knows rdf:resource="Person/PMorris"/>
+      <foaf:knows rdf:resource="Person/PHopeck"/>
+      <foaf:knows rdf:resource="Person/PKnutson"/>
+      <foaf:knows rdf:resource="Person/PMonge"/>
+      <foaf:knows rdf:resource="Person/PRajan"/>
+      <foaf:knows rdf:resource="Person/RMitra"/>
+      <foaf:knows rdf:resource="Person/RDohrman"/>
+      <foaf:knows rdf:resource="Person/RMeisenbach"/>
+      <foaf:knows rdf:resource="Person/SLee"/>
+      <foaf:knows rdf:resource="Person/SShorter"/>
+      <foaf:knows rdf:resource="Person/SConnaughton"/>
+      <foaf:knows rdf:resource="Person/SDEnbeau"/>
+      <foaf:knows rdf:resource="Person/TReimer"/>
+      <foaf:knows rdf:resource="Person/TRusso"/>
+      <foaf:knows rdf:resource="Person/VMiller"/>
+      <foaf:knows rdf:resource="Person/VChaudhri"/>
+      <foaf:knows rdf:resource="Person/XZhu"/>
+      <foaf:knows rdf:resource="Person/ZLong"/>
+      <foaf:knows rdf:resource="Person/NDesrayaud"/>
+      <foaf:knows rdf:resource="Person/EWong"/>
+      <foaf:phone rdf:resource="tel:+1-765-543-9063"/>
+      <foaf:mbox_sha1sum>83a7ec17028ca3ca8b7393ac3c7f1ae106ceffd2</foaf:mbox_sha1sum>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSR</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crisis/Risk</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DecisionMaking</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discourse</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iden</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InterOrgComm</foaf:interest>
+      <foaf:givenName>Jennifer</foaf:givenName>
+      <foaf:name>Jennifer S. Linvill</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leadership</foaf:interest>
+      <foaf:familyName>Linvill</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgChange</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgCulture</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SenseMaking</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Socialization</foaf:interest>
+   </foaf:Person>
+</rdf:RDF>

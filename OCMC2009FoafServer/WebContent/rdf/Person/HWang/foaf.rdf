@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/HWang"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Hua Wang" rdf:about="Person/HWang">
+      <foaf:mbox rdf:resource="mailto:wanghuaruc@gmail.com"/>
+      <foaf:knows rdf:resource="Person/BFoucault"/>
+      <foaf:knows rdf:resource="Person/JTreem"/>
+      <foaf:knows rdf:resource="Person/LYoung"/>
+      <foaf:knows rdf:resource="Person/MHuang"/>
+      <foaf:knows rdf:resource="Person/MZhu"/>
+      <foaf:knows rdf:resource="Person/NContractor"/>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DecisionMaking</foaf:interest>
+      <foaf:givenName>Hua</foaf:givenName>
+      <foaf:name>Hua Wang</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iden</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InterOrgComm</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leadership</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negotiation</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Socialization</foaf:interest>
+      <foaf:familyName>Wang</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WorkLife</foaf:interest>
+      <foaf:mbox_sha1sum>d3af22e88d340b3de2c3328e69b251c546d1735f</foaf:mbox_sha1sum>
+   </foaf:Person>
+</rdf:RDF>

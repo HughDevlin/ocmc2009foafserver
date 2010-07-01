@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="OCMC2009FoafServer" default="War" basedir=".">
+	<property environment="env"/>
+	<property name="db.url" value="jdbc:mysql://localhost:3306/OCMC2009"/>
+	<path id="project.path.saxon">
+		<pathelement location="WebContent/WEB-INF/lib/saxon9he.jar" />
+	</path>
+	<path id="project.path.mysql">
+		<pathelement location="../SWBenchmark/lib/mysql-connector-java-5.1.7-bin.jar" />
+	</path>
+	<path id="project.path.d2r">
+		<fileset dir="C:\Users\Hugh\workspace\d2r-server-0.7\lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<target name="Clean" description="delete war">
+		<delete file="${ant.project.name}.war" />
+	</target>
+	<target name="CreateDb" description="create mySql database">
+		<input message="Please enter database password:" addproperty="db.password" />
+		<sql driver="com.mysql.jdbc.Driver" url="${db.url}" userid="root" password="${db.password}" src="sql/createdb.sql">
+			<classpath refid="project.path.mysql" />
+		</sql>
+	</target>
+	<target name="Import" description="import OCMC 2009 database into mysql">
+		<input message="Please enter database password:" addproperty="db.password" />
+		<sql driver="com.mysql.jdbc.Driver" url="{db.url}" userid="root" password="${db.password}" src="sql/OCMC2009.sql">
+			<classpath refid="project.path.mysql" />
+		</sql>
+	</target>
+	<target name="FoafPersonView" description="nodes foaf view">
+		<input message="Please enter database password:" addproperty="db.password" />
+		<sql driver="com.mysql.jdbc.Driver" url="{db.url}" userid="root" password="${db.password}" src="sql/FoafPerson.sql">
+			<classpath refid="project.path.mysql" />
+		</sql>
+	</target>
+	<target name="FoafGroupView" description="groups foaf view">
+		<input message="Please enter database password:" addproperty="db.password" />
+		<sql driver="com.mysql.jdbc.Driver" url="{db.url}" userid="root" password="${db.password}" src="sql/FoafGroup.sql">
+			<classpath refid="project.path.mysql" />
+		</sql>
+	</target>
+	<target name="DumpRdf" description="SQL 2 RDF">
+		<input message="Please enter database password:" addproperty="db.password" />
+		<java classname="d2rq.dump_rdf" classpathref="project.path.d2r" failonerror="true">
+			<arg value="-m" />
+			<arg value="map/OCMC2FoafMapping.n3" />
+			<arg value="-b" />
+			<arg value="/" />
+			<arg value="-f" />
+			<arg value="RDF/XML-ABBREV" />
+			<arg value="-u" />
+			<arg value="root" />
+			<arg value="-p" />
+			<arg value="${db.password}" />
+			<arg value="-o" />
+			<arg value="xml/${ant.project.name}.xml" />
+			<arg value="-j" />
+			<arg value="{db.url}" />
+		</java>
+	</target>
+	<target name="Abbreviate" description="promote rdf types">
+		<xslt in="xml/${ant.project.name}.xml" out="xml/AbbreviatedFoaf.xml" style="xsl/Abbreviate.xsl">
+			<factory name="net.sf.saxon.TransformerFactoryImpl" />
+			<classpath refid="project.path.saxon" />
+		</xslt>
+	</target>
+	<target name="Split" description="create personal foaf files and sets xml base url" depends="Abbreviate">
+		<xslt in="xml/AbbreviatedFoaf.xml" out="tmp/Split.out.xml" style="xsl/Split.xsl">
+			<factory name="net.sf.saxon.TransformerFactoryImpl" />
+			<classpath refid="project.path.saxon" />
+		</xslt>
+	</target>
+	<target name="Index" description="welcome page" depends="Abbreviate">
+		<xslt in="xml/AbbreviatedFoaf.xml" out="WebContent/index.html" style="xsl/index.xsl">
+			<factory name="net.sf.saxon.TransformerFactoryImpl" />
+			<classpath refid="project.path.saxon" />
+		</xslt>
+	</target>
+	<target name="Compile" description="compile servlet and tests">
+		<javac srcdir="src" destdir="build">
+			<classpath>
+				<pathelement location="C:\Users\Hugh\Documents\JavaEE6SDK\glassfish\lib\javaee.jar" />
+				<pathelement location="C:\Users\Hugh\Downloads\httpunit-1.7\httpunit-1.7\lib\httpunit.jar" />
+				<pathelement location="C:\Users\Hugh\Documents\eclipse-jee-galileo-SR2-win32\eclipse\plugins\org.junit4_4.5.0.v20090824\junit.jar" />
+			</classpath>
+		</javac>
+	</target>
+	<target name="War" description="web application" depends="Clean,Compile">
+		<war destfile="build/${ant.project.name}.war" webxml="WebContent/WEB-INF/web.xml" manifest="WebContent/META-INF/MANIFEST.MF">
+			<fileset file="WebContent/index.html" />
+			<lib dir="WebContent/WEB-INF/lib" />
+			<classes dir="build/classes">
+				<exclude name="/ocmc/OcmcTest*" />
+				<exclude name="/ocmc/NamespaceContextImpl*" />
+			</classes>
+			<zipfileset dir="WebContent/images" prefix="images" />
+			<zipfileset dir="WebContent/rdf" prefix="rdf" />
+			<zipfileset dir="WebContent/xsl" prefix="xsl" />
+		</war>
+	</target>
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="C:\Users\Hugh\Documents\eclipse-jee-galileo-SR2-win32\eclipse\plugins\org.junit4_4.5.0.v20090824\junit.jar;C:\Users\Hugh\Downloads\httpunit-1.7\httpunit-1.7\jars\jtidy-4aug2000r7-dev.jar;C:\Users\Hugh\Downloads\httpunit-1.7\httpunit-1.7\jars\js-1.6R5.jar;C:\Users\Hugh\Documents\JavaEE6SDK\glassfish\lib\javaee.jar;C:\Users\Hugh\Downloads\saxonhe9-2-1-1j\saxon9he.jar;C:\Users\Hugh\Downloads\httpunit-1.7\httpunit-1.7\lib\httpunit.jar;WebContent/WEB-INF/lib/saxon9he.jar" destdir="doc" doctitle="OCMC Foaf Server" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" source="1.6" sourcefiles="src/test/ocmc/NamespaceContextImpl.java" sourcepath="src/main;src/test" splitindex="true" use="true" version="true" executable="${env.JAVA_HOME}/bin/javadoc">
+            <link href="http://java.sun.com/javase/6/docs/api/"/>
+            <link href="http://www.junit.org/junit/javadoc/4.5/"/>
+        </javadoc>
+    </target>
+</project>

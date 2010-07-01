@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/JLim"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person JoAnne Yong-Kwan Lim" rdf:about="Person/JLim">
+      <foaf:mbox rdf:resource="mailto:yong-kwan.lim@ou.edu"/>
+      <foaf:mbox_sha1sum>16c4753974c9978681109225e8cc9671793ed936</foaf:mbox_sha1sum>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DistributedWork</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ImpreMang</foaf:interest>
+      <foaf:givenName>JoAnne</foaf:givenName>
+      <foaf:name>JoAnne Yong-Kwan Lim</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KnwldgSharing</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leadership</foaf:interest>
+      <foaf:familyName>Lim</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Socialization</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time</foaf:interest>
+   </foaf:Person>
+</rdf:RDF>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/TLiu"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Tao Liu" rdf:about="Person/TLiu">
+      <foaf:mbox rdf:resource="mailto:liute@bc.edu"/>
+      <foaf:familyName>Liu</foaf:familyName>
+      <foaf:givenName>Tao</foaf:givenName>
+      <foaf:name>Tao Liu</foaf:name>
+      <foaf:mbox_sha1sum>e4510dbd60a499d3cf42e943ce61cd68ab944e2c</foaf:mbox_sha1sum>
+   </foaf:Person>
+</rdf:RDF>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/JFulk"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Janet Fulk" rdf:about="Person/JFulk">
+      <foaf:mbox rdf:resource="mailto:fulk@usc.edu"/>
+      <foaf:familyName>Fulk</foaf:familyName>
+      <foaf:givenName>Janet</foaf:givenName>
+      <foaf:name>Janet Fulk</foaf:name>
+      <foaf:mbox_sha1sum>b27a933bf7212a1a3bf4ec61c0f66da6b566d338</foaf:mbox_sha1sum>
+   </foaf:Person>
+</rdf:RDF>

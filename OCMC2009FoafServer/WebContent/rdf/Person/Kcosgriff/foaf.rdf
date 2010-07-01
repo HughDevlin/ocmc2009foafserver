@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/Kcosgriff"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Kevin-Khristan Cosgriff-Hernandez"
+                rdf:about="Person/Kcosgriff">
+      <foaf:mbox rdf:resource="mailto:cosgriffhernandez@tamu.edu"/>
+      <foaf:knows rdf:resource="Person/APorter"/>
+      <foaf:knows rdf:resource="Person/GFairhurst"/>
+      <foaf:knows rdf:resource="Person/IAhmed"/>
+      <foaf:knows rdf:resource="Person/JBarbour"/>
+      <foaf:knows rdf:resource="Person/MPoole"/>
+      <foaf:knows rdf:resource="Person/PMonge"/>
+      <foaf:knows rdf:resource="Person/SBoys"/>
+      <foaf:knows rdf:resource="Person/VMiller"/>
+      <foaf:knows rdf:resource="Person/ZSchaefer"/>
+      <foaf:phone rdf:resource="tel:+1-216-798-7516"/>
+      <foaf:mbox_sha1sum>1876c29b7f22eb0630935bcd721390cba3acae59</foaf:mbox_sha1sum>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict</foaf:interest>
+      <foaf:familyName>Cosgriff-Hernandez</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EthnoMethods</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iden</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InterOrgComm</foaf:interest>
+      <foaf:name>Kevin-Khristan Cosgriff-Hernandez</foaf:name>
+      <foaf:givenName>Kevin-Khristian</foaf:givenName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negotiation</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgCulture</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SenseMaking</foaf:interest>
+   </foaf:Person>
+</rdf:RDF>

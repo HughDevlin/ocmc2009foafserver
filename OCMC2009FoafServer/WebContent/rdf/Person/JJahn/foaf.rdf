@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/JJahn"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Jody Jahn" rdf:about="Person/JJahn">
+      <foaf:mbox rdf:resource="mailto:jodyjahn@umail.ucsb.edu"/>
+      <foaf:mbox_sha1sum>985eccfbb6de7564488c49114da8e896f4c88eea</foaf:mbox_sha1sum>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Constitive and Constructionist Theories of Organizations</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crisis/Risk</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discourse</foaf:interest>
+      <foaf:familyName>Jahn</foaf:familyName>
+      <foaf:givenName>Jody</foaf:givenName>
+      <foaf:name>Jody Jahn</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organizational Socialization</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SenseMaking</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Socialization</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structuration</foaf:interest>
+   </foaf:Person>
+</rdf:RDF>

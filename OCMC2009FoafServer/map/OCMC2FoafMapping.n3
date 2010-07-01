@@ -1,0 +1,131 @@
+# CI-Know to foaf
+# HJD 6/9/2010 initial implementation
+#
+# Reference:
+# http://www4.wiwiss.fu-berlin.de/bizer/d2rq/
+#
+@prefix map: <file:/C:/Users/Hugh/workspace/OCMC2009/OCMC2FoafMapping.n3#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix jdbc: <http://d2rq.org/terms/jdbc/> .
+@prefix d2r: <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#> .
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+map:database a d2rq:Database;
+	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
+	d2rq:jdbcDSN "jdbc:mysql://localhost/OCMC2009";
+	d2rq:username "root";
+	d2rq:password "root";
+	jdbc:autoReconnect "true";
+	jdbc:zeroDateTimeBehavior "convertToNull";
+	.
+
+map:Configuration a d2rq:Configuration;
+	d2rq:serveVocabulary false;
+	d2rq:useAllOptimizations true;
+	.
+
+<> a d2r:Server;
+    rdfs:label "OCMC 2009 Rdf Server";
+    d2r:baseURI <http://localhost:8080/>;
+    d2r:port 8080;
+    d2r:documentMetadata [
+        rdfs:comment "OCMC 2009 data.";
+    ];
+    .
+
+# Table nodes
+map:foafperson a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "Person/@@foafperson.username@@";
+	d2rq:class foaf:Person;
+	.
+map:foafperson_label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafperson;
+	d2rq:property rdfs:label;
+	d2rq:pattern "Person @@foafperson.label@@";
+	.
+map:foafperson_name a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafperson;
+	d2rq:property foaf:name;
+	d2rq:column "foafperson.label";
+	.
+map:foafperson_first_name a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafperson;
+	d2rq:property foaf:givenName;
+	d2rq:column "foafperson.first_name";
+	.
+map:foafperson_last_name a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafperson;
+	d2rq:property foaf:familyName;
+	d2rq:column "foafperson.last_name";
+	.
+map:foafperson_phone a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafperson;
+	d2rq:property foaf:phone;
+    d2rq:uriSqlExpression "CONCAT('tel:+1-',SUBSTRING(foafperson.phone,1,3),'-',SUBSTRING(foafperson.phone,4,3),'-',SUBSTRING(foafperson.phone,7,4))";
+	d2rq:condition "foafperson.phone <> ''";
+	.
+map:foafperson_uri a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafperson;
+	d2rq:property foaf:homepage;
+	d2rq:uriColumn "foafperson.uri";
+	d2rq:condition "foafperson.uri <> '' AND foafperson.uri <> '-'";
+	.
+map:foafperson_email a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafperson;
+	d2rq:property foaf:mbox;
+    d2rq:uriPattern "mailto:@@foafperson.email@@";
+	d2rq:condition "foafperson.email <> ''";
+	.
+map:foafperson_email_hashed a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafperson;
+	d2rq:property foaf:mbox_sha1sum;
+    d2rq:sqlExpression "SHA1(CONCAT('mailto:', foafperson.email))";
+	d2rq:condition "foafperson.email <> ''";
+    .
+map:foafperson_knows a d2rq:PropertyBridge;
+    d2rq:belongsToClassMap map:foafperson;
+    d2rq:property foaf:knows;
+    d2rq:join "foafperson.node_id => edges.from_node_id";
+    d2rq:join "edges.to_node_id => to_nodes.node_id";
+    d2rq:alias "foafperson AS to_nodes";
+	d2rq:uriPattern "Person/@@to_nodes.username@@";
+	d2rq:condition "edges.type = 'WhoYouKnow'"
+    .
+# Range of foaf:interest is foaf:Document, we use literal 
+map:foafperson_interest a d2rq:PropertyBridge;
+    d2rq:belongsToClassMap map:foafperson;
+    d2rq:property foaf:interest;
+	d2rq:join "foafperson.node_id => foafinterest.node_id";
+	d2rq:column "foafinterest.interest";
+	d2rq:datatype xsd:string;
+    .
+
+# Table groups
+map:foafgroup a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "Group/@@foafgroup.organization_display_name|urlify@@";
+	d2rq:class foaf:Group;
+	.
+map:foafgroup_label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafgroup;
+	d2rq:property rdfs:label;
+	d2rq:sqlExpression "CONCAT('Group ', foafgroup.organization_display_name)";
+	.
+map:groups_name a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafgroup;
+	d2rq:property foaf:name;
+	d2rq:column "foafgroup.organization_display_name";
+	.
+map:organization_nodes a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:foafgroup;
+	d2rq:property foaf:member;
+	d2rq:refersToClassMap map:foafperson;
+    d2rq:join "foafgroup.organization => foafperson.organization";
+    d2rq:condition "foafperson.node_id IS NOT NULL"
+	.
+	

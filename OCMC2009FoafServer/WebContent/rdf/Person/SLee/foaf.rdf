@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/SLee"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Seungyoon Lee" rdf:about="Person/SLee">
+      <foaf:mbox rdf:resource="mailto:seungyoon@purdue.edu"/>
+      <foaf:mbox_sha1sum>5470b3b451a277846b04f284437dff65de142f3a</foaf:mbox_sha1sum>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EvoPerspective</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InterOrgComm</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KnwldgSharing</foaf:interest>
+      <foaf:familyName>Lee</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgChange</foaf:interest>
+      <foaf:givenName>Seungyoon</foaf:givenName>
+      <foaf:name>Seungyoon Lee</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechImplem</foaf:interest>
+   </foaf:Person>
+</rdf:RDF>

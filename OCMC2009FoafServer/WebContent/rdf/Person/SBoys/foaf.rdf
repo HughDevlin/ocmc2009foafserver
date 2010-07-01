@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/SBoys"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Suzanne Boys" rdf:about="Person/SBoys">
+      <foaf:mbox rdf:resource="mailto:suzanne.boys@uc.edu"/>
+      <foaf:knows rdf:resource="Person/GFairhurst"/>
+      <foaf:knows rdf:resource="Person/JTreem"/>
+      <foaf:knows rdf:resource="Person/JLammers"/>
+      <foaf:knows rdf:resource="Person/JBarbour"/>
+      <foaf:knows rdf:resource="Person/MPoole"/>
+      <foaf:knows rdf:resource="Person/MJackson"/>
+      <foaf:knows rdf:resource="Person/NContractor"/>
+      <foaf:knows rdf:resource="Person/PSpence"/>
+      <foaf:knows rdf:resource="Person/PMonge"/>
+      <foaf:knows rdf:resource="Person/SConnaughton"/>
+      <foaf:knows rdf:resource="Person/MRoloff"/>
+      <foaf:familyName>Boys</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSR</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crisis/Risk</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iden</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ImpreMang</foaf:interest>
+      <foaf:givenName>Suzanne</foaf:givenName>
+      <foaf:name>Suzanne Boys</foaf:name>
+      <foaf:mbox_sha1sum>b79f1584c2681923fb888a0099efa7f4c08832bf</foaf:mbox_sha1sum>
+   </foaf:Person>
+</rdf:RDF>

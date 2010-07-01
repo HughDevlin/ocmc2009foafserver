@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/BSmith"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Brenda Joy Smith" rdf:about="Person/BSmith">
+      <foaf:mbox rdf:resource="mailto:bsmith81@slu.edu"/>
+      <foaf:mbox_sha1sum>95ee238519cc1e246e2623010a9faee9ccf5b07e</foaf:mbox_sha1sum>
+      <foaf:givenName>Brenda</foaf:givenName>
+      <foaf:name>Brenda Joy Smith</foaf:name>
+      <foaf:familyName>Smith</foaf:familyName>
+   </foaf:Person>
+</rdf:RDF>
