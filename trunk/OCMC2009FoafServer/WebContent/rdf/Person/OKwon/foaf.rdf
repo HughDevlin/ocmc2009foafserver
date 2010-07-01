@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/OKwon"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Okyu Kwon" rdf:about="Person/OKwon">
+      <foaf:mbox rdf:resource="mailto:okyu-kwon@kellogg.northwestern.edu"/>
+      <foaf:mbox_sha1sum>1560db104717f71010916c7dab6b5e443e62776e</foaf:mbox_sha1sum>
+      <foaf:familyName>Kwon</foaf:familyName>
+      <foaf:givenName>Okyu</foaf:givenName>
+      <foaf:name>Okyu Kwon</foaf:name>
+   </foaf:Person>
+</rdf:RDF>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/MRivera"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Mark Rivera" rdf:about="Person/MRivera">
+      <foaf:mbox rdf:resource="mailto:mark-rivera@kellogg.northwestern.edu"/>
+      <foaf:knows rdf:resource="Person/NContractor"/>
+      <foaf:knows rdf:resource="Person/OKwon"/>
+      <foaf:knows rdf:resource="Person/SSaavedra"/>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DecisionMaking</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DistributedWork</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InterOrgComm</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KnwldgSharing</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leadership</foaf:interest>
+      <foaf:givenName>Mark</foaf:givenName>
+      <foaf:name>Mark Rivera</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgChange</foaf:interest>
+      <foaf:familyName>Rivera</foaf:familyName>
+      <foaf:mbox_sha1sum>ebd2e44a54f5f5efe0d855a1bb8220a67b9f7532</foaf:mbox_sha1sum>
+   </foaf:Person>
+</rdf:RDF>

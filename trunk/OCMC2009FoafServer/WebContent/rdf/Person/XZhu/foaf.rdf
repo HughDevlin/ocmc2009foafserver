@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/XZhu"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Xiumei Zhu" rdf:about="Person/XZhu">
+      <foaf:mbox rdf:resource="mailto:xiumei.zhu.1@purdue.edu"/>
+      <foaf:knows rdf:resource="Person/CArmstrong"/>
+      <foaf:knows rdf:resource="Person/EWilliams"/>
+      <foaf:knows rdf:resource="Person/HSuo"/>
+      <foaf:knows rdf:resource="Person/LKisselburgh"/>
+      <foaf:knows rdf:resource="Person/MPoole"/>
+      <foaf:knows rdf:resource="Person/MWu"/>
+      <foaf:knows rdf:resource="Person/PMorris"/>
+      <foaf:knows rdf:resource="Person/PRajan"/>
+      <foaf:knows rdf:resource="Person/RMitra"/>
+      <foaf:knows rdf:resource="Person/SLee"/>
+      <foaf:knows rdf:resource="Person/SConnaughton"/>
+      <foaf:knows rdf:resource="Person/ZLong"/>
+      <foaf:mbox_sha1sum>5b9cd28518a0139cde8187807c13b5aae90b386c</foaf:mbox_sha1sum>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSR</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crisis/Risk</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DecisionMaking</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DistributedWork</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iden</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ImpreMang</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Innovation</foaf:interest>
+      <foaf:givenName>Xiumei</foaf:givenName>
+      <foaf:name>Xiumei Zhu</foaf:name>
+      <foaf:familyName>Zhu</foaf:familyName>
+   </foaf:Person>
+</rdf:RDF>

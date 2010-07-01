@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Group/Purdue_University"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Group rdfs:label="Group Purdue University" rdf:about="Group/Purdue_University">
+      <foaf:member rdf:resource="Person/BBerkelaar"/>
+      <foaf:member rdf:resource="Person/BBritt"/>
+      <foaf:member rdf:resource="Person/CArmstrong"/>
+      <foaf:member rdf:resource="Person/CArendt"/>
+      <foaf:member rdf:resource="Person/EWilliams"/>
+      <foaf:member rdf:resource="Person/HSuo"/>
+      <foaf:member rdf:resource="Person/JTan"/>
+      <foaf:member rdf:resource="Person/JLinvill"/>
+      <foaf:member rdf:resource="Person/JDowd"/>
+      <foaf:member rdf:resource="Person/LOConnor"/>
+      <foaf:member rdf:resource="Person/LKisselburgh"/>
+      <foaf:member rdf:resource="Person/MWu"/>
+      <foaf:member rdf:resource="Person/PMorris"/>
+      <foaf:member rdf:resource="Person/PHopeck"/>
+      <foaf:member rdf:resource="Person/PRajan"/>
+      <foaf:member rdf:resource="Person/RMitra"/>
+      <foaf:member rdf:resource="Person/RDohrman"/>
+      <foaf:member rdf:resource="Person/SLee"/>
+      <foaf:member rdf:resource="Person/SShorter"/>
+      <foaf:member rdf:resource="Person/SConnaughton"/>
+      <foaf:member rdf:resource="Person/TReimer"/>
+      <foaf:member rdf:resource="Person/VChaudhri"/>
+      <foaf:member rdf:resource="Person/XZhu"/>
+      <foaf:member rdf:resource="Person/ZLong"/>
+      <foaf:member rdf:resource="Person/NDesrayaud"/>
+      <foaf:name>Purdue University</foaf:name>
+   </foaf:Group>
+</rdf:RDF>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/ZKertcher"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Zack Kertcher" rdf:about="Person/ZKertcher">
+      <foaf:mbox rdf:resource="mailto:kertcher@uchicago.edu"/>
+      <foaf:familyName>Kertcher</foaf:familyName>
+      <foaf:givenName>Zack</foaf:givenName>
+      <foaf:name>Zack Kertcher</foaf:name>
+      <foaf:mbox_sha1sum>ca0c0b932977480b21c8717590e22b70c074ab4f</foaf:mbox_sha1sum>
+   </foaf:Person>
+</rdf:RDF>

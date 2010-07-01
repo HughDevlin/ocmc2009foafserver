@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/KFonner"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Kathryn Fonner" rdf:about="Person/KFonner">
+      <foaf:mbox rdf:resource="mailto:fonner@uwm.edu"/>
+      <foaf:mbox_sha1sum>0079b633207379bc6b3c5aa1d82cb9321cfb380b</foaf:mbox_sha1sum>
+      <foaf:familyName>Fonner</foaf:familyName>
+      <foaf:givenName>Kathryn</foaf:givenName>
+      <foaf:name>Kathryn Fonner</foaf:name>
+   </foaf:Person>
+</rdf:RDF>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/JDixon"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Jenny D. Dixon" rdf:about="Person/JDixon">
+      <foaf:mbox rdf:resource="mailto:jddf22@missouri.edu"/>
+      <foaf:mbox_sha1sum>2c534d20149a54aa8951a0acc1d1d42360f91ff3</foaf:mbox_sha1sum>
+      <foaf:familyName>Dixon</foaf:familyName>
+      <foaf:givenName>Jenny</foaf:givenName>
+      <foaf:name>Jenny D. Dixon</foaf:name>
+   </foaf:Person>
+</rdf:RDF>

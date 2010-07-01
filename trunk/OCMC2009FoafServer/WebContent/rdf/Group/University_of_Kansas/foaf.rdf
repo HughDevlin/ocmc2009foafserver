@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Group/University_of_Kansas"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Group rdfs:label="Group University of Kansas" rdf:about="Group/University_of_Kansas">
+      <foaf:member rdf:resource="Person/AVillamil"/>
+      <foaf:member rdf:resource="Person/JGuthrie"/>
+      <foaf:member rdf:resource="Person/KGrill"/>
+      <foaf:member rdf:resource="Person/PKnutson"/>
+      <foaf:member rdf:resource="Person/SDEnbeau"/>
+      <foaf:member rdf:resource="Person/TRusso"/>
+      <foaf:name>University of Kansas</foaf:name>
+   </foaf:Group>
+</rdf:RDF>

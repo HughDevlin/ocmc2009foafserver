@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/WOlison"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Willona Olison" rdf:about="Person/WOlison">
+      <foaf:mbox rdf:resource="mailto:wolison@depaul.edu"/>
+      <foaf:mbox_sha1sum>16588810b7e137b0fa162c20ec8660092c005a43</foaf:mbox_sha1sum>
+      <foaf:familyName>Olison</foaf:familyName>
+      <foaf:givenName>Willona</foaf:givenName>
+      <foaf:name>Willona Olison</foaf:name>
+   </foaf:Person>
+</rdf:RDF>

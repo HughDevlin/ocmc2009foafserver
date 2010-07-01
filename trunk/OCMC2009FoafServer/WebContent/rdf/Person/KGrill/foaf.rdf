@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/KGrill"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Kris Grill" rdf:about="Person/KGrill">
+      <foaf:mbox rdf:resource="mailto:kmgrill@ku.edu"/>
+      <foaf:knows rdf:resource="Person/AVillamil"/>
+      <foaf:knows rdf:resource="Person/GFairhurst"/>
+      <foaf:knows rdf:resource="Person/JTreem"/>
+      <foaf:knows rdf:resource="Person/JGuthrie"/>
+      <foaf:knows rdf:resource="Person/JLammers"/>
+      <foaf:knows rdf:resource="Person/JBarbour"/>
+      <foaf:knows rdf:resource="Person/LKisselburgh"/>
+      <foaf:knows rdf:resource="Person/MPoole"/>
+      <foaf:knows rdf:resource="Person/NContractor"/>
+      <foaf:knows rdf:resource="Person/PKnutson"/>
+      <foaf:knows rdf:resource="Person/PMonge"/>
+      <foaf:knows rdf:resource="Person/RMitra"/>
+      <foaf:knows rdf:resource="Person/RDohrman"/>
+      <foaf:knows rdf:resource="Person/RMeisenbach"/>
+      <foaf:knows rdf:resource="Person/SConnaughton"/>
+      <foaf:knows rdf:resource="Person/SDEnbeau"/>
+      <foaf:knows rdf:resource="Person/TRusso"/>
+      <foaf:knows rdf:resource="Person/VMiller"/>
+      <foaf:phone rdf:resource="tel:+1-651-253-4547"/>
+      <foaf:mbox_sha1sum>578917a255e334269f8bd0a9bea3bd835f0b6d06</foaf:mbox_sha1sum>
+      <foaf:familyName>Grill</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iden</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ImpreMang</foaf:interest>
+      <foaf:givenName>Kris</foaf:givenName>
+      <foaf:name>Kris Grill</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgChange</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgCulture</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SenseMaking</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Socialization</foaf:interest>
+   </foaf:Person>
+</rdf:RDF>

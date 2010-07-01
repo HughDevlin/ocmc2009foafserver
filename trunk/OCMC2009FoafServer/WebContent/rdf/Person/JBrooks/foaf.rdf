@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/JBrooks"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Jo Ann Brooks" rdf:about="Person/JBrooks">
+      <foaf:mbox rdf:resource="mailto:jbrooks@umich.edu"/>
+      <foaf:phone rdf:resource="tel:+1-781-388-1851"/>
+      <foaf:mbox_sha1sum>0130eec5f30869e00e1bcd7e3e98bbee339224bc</foaf:mbox_sha1sum>
+      <foaf:familyName>Brooks</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Constitive and Constructionist Theories of Organizations</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EthnoMethods</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institutions</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InterOrgComm</foaf:interest>
+      <foaf:givenName>Jo</foaf:givenName>
+      <foaf:name>Jo Ann Brooks</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgChange</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgCulture</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organizational Socialization</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organizational Transformation</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organizations &amp; Technology</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Socialization</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structuration</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technology</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technology Design and Use</foaf:interest>
+   </foaf:Person>
+</rdf:RDF>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/LOmilion"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Leah Omilion" rdf:about="Person/LOmilion">
+      <foaf:mbox rdf:resource="mailto:Aw5579@wayne.edu"/>
+      <foaf:knows rdf:resource="Person/AParamore"/>
+      <foaf:knows rdf:resource="Person/AHarris"/>
+      <foaf:knows rdf:resource="Person/CBaker"/>
+      <foaf:knows rdf:resource="Person/LPechta"/>
+      <foaf:phone rdf:resource="tel:+1-248-635-7527"/>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ImpreMang</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InterOrgComm</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leadership</foaf:interest>
+      <foaf:givenName>Leah</foaf:givenName>
+      <foaf:name>Leah Omilion</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network</foaf:interest>
+      <foaf:familyName>Omilion</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgChange</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgCulture</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Socialization</foaf:interest>
+      <foaf:mbox_sha1sum>b2d42953f628121114f9ba8641324bb64e30d38b</foaf:mbox_sha1sum>
+   </foaf:Person>
+</rdf:RDF>

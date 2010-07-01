@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/RMeisenbach"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Rebecca Meisenbach" rdf:about="Person/RMeisenbach">
+      <foaf:mbox rdf:resource="mailto:meisenbachr@missouri.edu"/>
+      <foaf:mbox_sha1sum>2a758464face3f6b4cf047052dc4667d109975c3</foaf:mbox_sha1sum>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSR</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CriticalTheory</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FemiAppr</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iden</foaf:interest>
+      <foaf:familyName>Meisenbach</foaf:familyName>
+      <foaf:givenName>Rebecca</foaf:givenName>
+      <foaf:name>Rebecca Meisenbach</foaf:name>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WorkLife</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organizational rhetoric</foaf:interest>
+   </foaf:Person>
+</rdf:RDF>

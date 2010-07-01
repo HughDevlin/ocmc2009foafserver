@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://www.example.com/">
+   <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:primaryTopic rdf:resource="Person/ACarmon"/>
+   </foaf:PersonalProfileDocument>
+   <foaf:Person rdfs:label="Person Anna Carmon" rdf:about="Person/ACarmon">
+      <foaf:mbox rdf:resource="mailto:anna.carmon@ndsu.edu"/>
+      <foaf:knows rdf:resource="Person/AOConnor"/>
+      <foaf:knows rdf:resource="Person/EWilliams"/>
+      <foaf:knows rdf:resource="Person/GFairhurst"/>
+      <foaf:knows rdf:resource="Person/JTreem"/>
+      <foaf:knows rdf:resource="Person/JLammers"/>
+      <foaf:knows rdf:resource="Person/JBarbour"/>
+      <foaf:knows rdf:resource="Person/KWestern"/>
+      <foaf:knows rdf:resource="Person/MPoole"/>
+      <foaf:knows rdf:resource="Person/NContractor"/>
+      <foaf:knows rdf:resource="Person/PLeonardi"/>
+      <foaf:knows rdf:resource="Person/PHopeck"/>
+      <foaf:knows rdf:resource="Person/PMonge"/>
+      <foaf:knows rdf:resource="Person/RDohrman"/>
+      <foaf:knows rdf:resource="Person/RMeisenbach"/>
+      <foaf:knows rdf:resource="Person/RWhitbred"/>
+      <foaf:knows rdf:resource="Person/SConnaughton"/>
+      <foaf:knows rdf:resource="Person/VMiller"/>
+      <foaf:knows rdf:resource="Person/KWenzel"/>
+      <foaf:phone rdf:resource="tel:+1-860-836-0081"/>
+      <foaf:mbox_sha1sum>726bddfc57fd5f29be11b9d58f691c823ea7ca89</foaf:mbox_sha1sum>
+      <foaf:givenName>Anna</foaf:givenName>
+      <foaf:name>Anna Carmon</foaf:name>
+      <foaf:familyName>Carmon</foaf:familyName>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iden</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrgCulture</foaf:interest>
+      <foaf:interest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WorkLife</foaf:interest>
+   </foaf:Person>
+</rdf:RDF>
